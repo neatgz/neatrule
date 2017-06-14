@@ -4,10 +4,10 @@
         "Version": "6.0"
     },
     "Arguments": {
-        "MITM": "true,15F5092B,https://raw.githubusercontent.com/BurpSuite/RuleList/master/Example/MITM",
+        "MITM": "true,7F25976F,https://raw.githubusercontent.com/neatgz/neatrule/master/SurgeMITM",
         "External": "true,BurpSuite@0.0.0.0:6170",
         "MacOS": "true,1.2.3.4,5.6.7.8,3040,5030",
-        "DNS": "true,8.8.8.8,8.8.4.4"
+        "DNS": "true,8.8.8.8,8.8.4.4,223.5.5.5,114.114.114.114"
     },
     "General": {
         "EnhancedMode": true,
@@ -24,32 +24,30 @@
     },
     "Info": {
         "SERVER": [
-            "[Surge]|SERVERNama = http,1.2.3.1,8081,User,Password1",
-            "[Surge]|SERVERNamb = https,1.2.3.2,8082,User,Password2,skip-cert-verify=true",
-            "[Surge]|SERVERNamc = socks5,1.2.3.3,8083,User,Password3",
-            "[Surge]|SERVERNamd = socks5-tls,1.2.3.4,8084,User,Password4,skip-cert-verify=true",
-            "[Surge]|SERVERName = custom,1.2.3.5,8085,chacha20,Password5,[Module]",
-            "[Surge]|SERVERNamf = custom,1.2.3.6,8086,chacha20,Password5,[Module],obfs=http,obfs-host=www.google.com",
-            "[Surge]|SERVERNamg = custom,1.2.3.6,8086,chacha20,Password5,[Module],tfo=true"
+            "[Surge]|ARSS1 = custom,153.125.234.209,31163,aes-256-cfb,Jy5e2w,[Module]",
+            "[Surge]|ARSS2 = custom,153.125.234.206,31632,aes-256-cfb,Jy5e2w,[Module]",
+            "[Surge]|CNLIC = custom,ss.cnlic.com,6666,aes-256-cfb,f5Uva$A8&2r7Dej#5&e2uCREwr=STeDR,[Module]",
+            "[Surge]|LBT01 = custom,free1.lubanti.cf,50009,aes-256-cfb,7014794130,[Module]",
+            "[Surge]|LBT02 = custom,free2.lubanti.cf,50009,chacha20-ietf,7014794130,[Module]",
+            "[Surge]|LBT03 = custom,free3.lubanti.cf,50009,chacha20-ietf,7014794130,[Module]",
+            "[Surge]|HKSS1 = custom,nodesg.hkss.online,2473,chacha20,P1iHli32,[Module]"
         ],
         "Group": [
-            "[Surge]|Proxya = select,SERVERNama,SERVERNamb,SERVERNamc,SERVERNamd,SERVERName",
-            "[Surge]|Proxyb = select,SERVERNama,SERVERNamb,SERVERNamc,SERVERNamd",
-            "[Surge]|Proxyc = select,SERVERNama,SERVERNamb,SERVERName",
-            "[Surge]|Proxyd = select,SERVERNamd,SERVERName",
-            "[Surge]|Autoxy = url-test,SERVERNama, SERVERNamb, url = http://www.gstatic.com/generate_204, interval = 600, tolerance = 200, timeout = 5"
+            "[Surge]|Proxy4neat = select,Direct,Auto4neat,ARSS1,ARSS2,CNLIC,LBT01,LBT02.LBT03,HKSS1",
+            "[Surge]|Proxy4apple = select,Direct,ARSS1,ARSS2,CNLIC,LBT01,LBT02.LBT03,HKSS1",
+            "[Surge]|Auto4neat = url-test,ARSS1,ARSS2,CNLIC,LBT01,LBT02.LBT03,HKSS1, url = http://www.gstatic.com/generate_204, interval = 600, tolerance = 200, timeout = 5"
         ]
     },
     "SUFFIX": {
-        "Apple": "DIRECT",
-        "Proxy": "Autoxy",
-        "KEYWORD": "Proxyb",
-        "PROCESS": "Proxyb",
-        "URLREGEX": "Proxyb",
-        "USERAGENT": "Proxya",
-        "IPCIDR6": "Proxyc",
-        "IPCIDR": "Proxyc",
-        "Other": "Autoxy"
+        "Apple": "Proxy4apple",
+        "Proxy": "Proxy4neat",
+        "KEYWORD": "Proxy4neat",
+        "PROCESS": "Proxy4neat",
+        "URLREGEX": "Proxy4neat",
+        "USERAGENT": "Proxy4neat",
+        "IPCIDR6": "Proxy4neat",
+        "IPCIDR": "Proxy4neat",
+        "Other": "Proxy4neat"
     },
     "Other": {
         "Module": "https://raw.githubusercontent.com/BurpSuite/RuleList/master/Module/Module",
