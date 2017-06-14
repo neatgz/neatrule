@@ -24,7 +24,7 @@
     },
     "Info": {
         "SERVER": [
-            "[Surge]|Direct4neat = Direct",
+            "[Surge]|Direct4neat = direct",
             "[Surge]|ARSS1 = custom,153.125.234.209,31163,aes-256-cfb,Jy5e2w,[Module]",
             "[Surge]|ARSS2 = custom,153.125.234.206,31632,aes-256-cfb,Jy5e2w,[Module]",
             "[Surge]|CNLIC = custom,ss.cnlic.com,6666,aes-256-cfb,f5Uva$A8&2r7Dej#5&e2uCREwr=STeDR,[Module]",
