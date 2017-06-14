@@ -36,7 +36,7 @@
         "Group": [
             "[Surge]|Proxy4neat = select,Direct4neat,Auto4neat,ARSS1,ARSS2,CNLIC,LBT01,LBT02.LBT03,HKSS1",
             "[Surge]|Proxy4apple = select,Direct4neat,ARSS1,ARSS2,CNLIC,LBT01,LBT02.LBT03,HKSS1",
-            "[Surge]|Auto4neat = url-test,ARSS1,ARSS2,CNLIC,LBT01,LBT02.LBT03,HKSS1, url = http://www.gstatic.com/generate_204, interval = 600, tolerance = 200, timeout = 5"
+            "[Surge]|Auto4neat = url-test,ARSS1,ARSS2,CNLIC,LBT01,LBT02,LBT03,HKSS1, url = http://www.gstatic.com/generate_204, interval = 600, tolerance = 200, timeout = 5"
         ]
     },
     "SUFFIX": {
