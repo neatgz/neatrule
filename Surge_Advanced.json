@@ -24,20 +24,7 @@
     },
     "Info": {
         "SERVER": [
-            "[Surge]|Direct4neat = direct",
-            "[Surge]|ARSS1 = custom,153.125.234.209,31163,aes-256-cfb,Jy5e2w,[Module]",
-            "[Surge]|ARSS2 = custom,153.125.234.206,31632,aes-256-cfb,Jy5e2w,[Module]",
-            "[Surge]|CNLIC = custom,ss.cnlic.com,6666,aes-256-cfb,f5Uva$A8&2r7Dej#5&e2uCREwr=STeDR,[Module]",
-            "[Surge]|LBT01 = custom,free1.lubanti.cf,50009,aes-256-cfb,7014794130,[Module]",
-            "[Surge]|LBT02 = custom,free2.lubanti.cf,50009,chacha20-ietf,7014794130,[Module]",
-            "[Surge]|LBT03 = custom,free3.lubanti.cf,50009,chacha20-ietf,7014794130,[Module]",
-            "[Surge]|HKSS1 = custom,nodesg.hkss.online,2473,chacha20,P1iHli32,[Module]"
-        ],
-        "Group": [
-            "[Surge]|Proxy4neat = select,Direct4neat,Auto4neat,ARSS1,ARSS2,CNLIC,LBT01,LBT02,LBT03,HKSS1",
-            "[Surge]|Proxy4apple = select,Direct4neat,ARSS1,ARSS2,CNLIC,LBT01,LBT02,LBT03,HKSS1",
-            "[Surge]|Auto4neat = url-test,ARSS1,ARSS2,CNLIC,LBT01,LBT02,LBT03,HKSS1, url = http://www.gstatic.com/generate_204, interval = 600, tolerance = 200, timeout = 5"
-        ]
+            
     },
     "SUFFIX": {
         "Apple": "Proxy4apple",
