@@ -29,13 +29,12 @@
             "[Surge]|CNLIC = custom,ss.cnlic.com,6666,aes-256-cfb,f5Uva$A8&2r7Dej#5&e2uCREwr=STeDR,[Module]",
             "[Surge]|HKSS1 = custom,nodesg.hkss.online,2473,chacha20,P1iHli32,[Module]",
             "[Surge]|LBT01 = custom,free1.lubanti.cf,50009,aes-256-cfb,7014794130,[Module]",
-            "[Surge]|LBT02 = custom,free2.lubanti.cf,50009,chacha20-ietf,7014794130,[Module]",
-            "[Surge]|LBT03 = custom,free3.lubanti.cf,50009,chacha20-ietf,7014794130,[Module]"
+            "[Surge]|LBT02 = custom,free2.lubanti.cf,50009,chacha20-ietf,7014794130,[Module]"
         ],
         "Group": [
-            "[Surge]|Proxy = select,DIRECT,Auto,ARSS1,ARSS2,CNLIC,HKSS1,LBT01,LBT02,LBT03",
-            "[Surge]|Apple = select,DIRECT,ARSS1,ARSS2,CNLIC,HKSS1,LBT01,LBT02,LBT03",
-            "[Surge]|Auto = url-test,ARSS1,ARSS2,CNLIC,HKSS1,LBT01,LBT02,LBT03, url = http://www.gstatic.com/generate_204, interval = 600, tolerance = 200, timeout = 5"
+            "[Surge]|Proxy = select,DIRECT,Auto,ARSS1,ARSS2,CNLIC,HKSS1,LBT01,LBT02",
+            "[Surge]|Apple = select,DIRECT,ARSS1,ARSS2,CNLIC,HKSS1,LBT01,LBT02",
+            "[Surge]|Auto = url-test,ARSS1,ARSS2,CNLIC,HKSS1,LBT01,LBT02, url = http://www.gstatic.com/generate_204, interval = 600, tolerance = 200, timeout = 5"
         ]
     },
     "SUFFIX": {
