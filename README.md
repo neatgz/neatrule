@@ -1,2 +1,3 @@
 # neatrule
-my own rule
+only for test
+hello world
