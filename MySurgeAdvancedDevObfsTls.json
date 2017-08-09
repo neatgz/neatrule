@@ -24,7 +24,7 @@
     },
     "Info": {
         "SERVER": [
-            "[Surge]|AliSSL = custom,www.lesite.ga,445,chacha20-ietf-poly1305,tXpxt8yK,[Module],obfs=tls,obfs-host=amazon.com",
+            "[Surge]|AliSSL = custom,www.lesite.ga,445,chacha20-ietf-poly1305,tXpxt8yK,[Module],obfs=tls,obfs-host=amazon.com,tfo=true",
             "[Surge]|CNLIC = custom,ss.cnlic.com,6666,aes-256-cfb,f5Uva$A8&2r7Dej#5&e2uCREwr=STeDR,[Module]",
             "[Surge]|HKSS1 = custom,nodesg.hkss.online,2935,aes-256-cfb,DnlgJNsl,[Module]"
         ],
