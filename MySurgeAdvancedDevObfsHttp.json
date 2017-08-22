@@ -24,14 +24,16 @@
     },
     "Info": {
         "SERVER": [
-            "[Surge]|AliSSL = custom,www.lesite.ga,81,chacha20-ietf-poly1305,tXpxt8yK,[Module],obfs=http,obfs-host=amazon.com",
+            "[Surge]|AliSSL = custom,www.lesite.ga,81,chacha20-ietf-poly1305,tXpxt8yK,[Module],obfs=http,obfs-host=amazon.com,tfo=true",
+            "[Surge]|AliV2SS = custom,www.lesite.ga,82,aes-256-cfb,8CwNpd8h,[Module]",
             "[Surge]|CNLIC = custom,ss.cnlic.com,6666,aes-256-cfb,f5Uva$A8&2r7Dej#5&e2uCREwr=STeDR,[Module]",
-            "[Surge]|HKSS1 = custom,nodesg.hkss.online,2935,aes-256-cfb,DnlgJNsl,[Module]"
+            "[Surge]|HKSS1 = custom,nodesg.hkss.online,2935,aes-256-cfb,DnlgJNsl,[Module]",
+            "[Surge]|233Cat = custom,47.52.60.2,20033,rc4-md5,dgxeuKCB,[Module]"
         ],
         "Group": [
-            "[Surge]|Proxy = select,DIRECT,Auto,AliSSL,CNLIC,HKSS1",
-            "[Surge]|Apple = select,DIRECT,AliSSL,CNLIC,HKSS1",
-            "[Surge]|Auto = url-test,AliSSL,CNLIC,HKSS1, url = http://www.gstatic.com/generate_204, interval = 600, tolerance = 200, timeout = 5"
+            "[Surge]|Proxy = select,DIRECT,Auto,AliSSL,AliV2SS,CNLIC,HKSS1,233Cat",
+            "[Surge]|Apple = select,DIRECT,AliSSL,AliV2SS,CNLIC,HKSS1,233Cat",
+            "[Surge]|Auto = url-test,AliSSL,AliV2SS,CNLIC,HKSS1,233Cat, url = http://www.gstatic.com/generate_204, interval = 600, tolerance = 200, timeout = 5"
         ]
     },
     "SUFFIX": {
